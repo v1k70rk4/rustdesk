@@ -983,7 +983,7 @@ pub fn get_api_server(api: String, custom: String) -> String {
 
 fn get_api_server_(api: String, custom: String) -> String {
 	let _ = (api, custom);
-	"https://rustedesk.coimbraits.hu".to_owned()
+	"https://rustdesk.coimbraits.hu".to_owned()
 }
 
 #[inline]
