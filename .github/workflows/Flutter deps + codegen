@@ -1,0 +1,9 @@
+- name: Flutter deps + codegen
+  shell: pwsh
+  working-directory: flutter
+  run: |
+    flutter --version
+    flutter clean
+    if (Test-Path .dart_tool) { Remove-Item -Recurse -Force .dart_tool }
+    flutter pub get
+    dart run build_runner build --delete-conflicting-outputs
